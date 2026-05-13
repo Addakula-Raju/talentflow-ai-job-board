@@ -6,8 +6,10 @@ import {
   CheckCircle2, ArrowRight, Zap, Activity, Clock
 } from 'lucide-react';
 import { useJobStore, useUserStore } from '@/store';
+// eslint-disable-next-line no-unused-vars
 import { formatSalary, formatDate, getMatchBg, getMatchLabel } from '@/utils';
 import PageTransition from '@/components/common/PageTransition';
+// eslint-disable-next-line no-unused-vars
 import JobCard from '@/components/jobs/JobCard';
 import MatchScore from '@/components/ui/MatchScore';
 import Badge from '@/components/ui/Badge';

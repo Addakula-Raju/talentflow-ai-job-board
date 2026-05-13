@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { LayoutGrid, List, SlidersHorizontal, X } from 'lucide-react';
+import { LayoutGrid, List, SlidersHorizontal } from 'lucide-react';
 import { useJobStore } from '@/store';
 import PageTransition from '@/components/common/PageTransition';
 import SearchBar from '@/components/jobs/SearchBar';

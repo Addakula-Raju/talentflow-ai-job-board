@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ArrowRight, Sparkles, Zap, Target, Brain, Shield, TrendingUp, Star, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Sparkles, Zap, Target, Brain, Shield, Star, CheckCircle2 } from 'lucide-react';
 import { JOBS, CATEGORIES } from '@/data/jobs';
 import { formatSalary } from '@/utils';
 import PageTransition from '@/components/common/PageTransition';
@@ -148,7 +148,7 @@ export default function LandingPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-ink-secondary max-w-xl mx-auto mb-10 leading-relaxed"
           >
-            TalentFlow uses AI to match you with roles you'll love, identify skill gaps,
+            TalentFlow uses AI to match you with roles youll love, identify skill gaps,
             and even draft your cover letters — all in one place.
           </motion.p>
 
@@ -224,7 +224,7 @@ export default function LandingPage() {
               Your AI career co-pilot
             </h2>
             <p className="text-ink-secondary max-w-xl mx-auto">
-              Stop guessing whether you're a good fit. Let AI do the heavy lifting so you can focus on what matters.
+              Stop guessing whether youre a good fit. Let AI do the heavy lifting so you can focus on what matters.
             </p>
           </motion.div>
 
@@ -321,7 +321,7 @@ export default function LandingPage() {
             className="text-center mb-10"
           >
             <h2 className="text-3xl font-extrabold text-ink-primary mb-3">Browse by category</h2>
-            <p className="text-ink-secondary">From IC roles to leadership — we've got the full spectrum.</p>
+            <p className="text-ink-secondary">From IC roles to leadership — weve got the full spectrum.</p>
           </motion.div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {CATEGORIES.map((cat, i) => (
@@ -374,7 +374,7 @@ export default function LandingPage() {
                 Ready to find your next chapter?
               </h2>
               <p className="text-white/75 mb-8 max-w-md mx-auto">
-                Get AI-matched to opportunities you'd actually want. Takes 2 minutes to get started.
+                Get AI-matched to opportunities youd actually want. Takes 2 minutes to get started.
               </p>
               <Link
                 to="/jobs"

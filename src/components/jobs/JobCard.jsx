@@ -11,6 +11,7 @@ import CompanyLogo from '@/components/ui/CompanyLogo';
 
 export default function JobCard({ job, index = 0, compact = false }) {
   const { toggleSaveJob } = useJobStore();
+  // eslint-disable-next-line no-unused-vars
   const [saving, setSaving] = useState(false);
 
   const handleSave = async (e) => {

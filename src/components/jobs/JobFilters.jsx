@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { X, SlidersHorizontal } from 'lucide-react';
 import { useJobStore } from '@/store';
-import Button from '@/components/ui/Button';
+// import Button from '@/components/ui/Button';
 import { cn } from '@/utils';
 
 const TYPE_OPTIONS    = ['Full-time', 'Part-time', 'Contract', 'Internship'];
@@ -92,6 +92,13 @@ export default function JobFilters({ className }) {
         options={DEPT_OPTIONS}
         selected={filters.department}
         onChange={v => setFilter('department', v)}
+      />
+
+      <FilterGroup
+        label="Experience"
+        options={EXP_OPTIONS}
+        selected={filters.experience}
+        onChange={v => setFilter('experience', v)}
       />
 
       {/* Salary range */}

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Sparkles, X, RefreshCw, Brain, Target, TrendingUp, Copy, Check } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Sparkles, X, Brain, Target, TrendingUp, Copy, Check } from 'lucide-react';
 import { mockServices } from '@/services/ai';
 import { useUserStore } from '@/store';
 import { cn } from '@/utils';
-import Button from '@/components/ui/Button';
+// import Button from '@/components/ui/Button';
 import { Skeleton } from '@/components/ui/Skeleton';
 
 function AISection({ icon: Icon, title, children, accent = 'brand' }) {
@@ -47,7 +47,7 @@ export default function AIPanel({ job, onClose }) {
       setInsights(ins);
       setLoading(false);
     });
-  }, [job?.id]);
+  }, [job, job.id, profile.skills]);
 
   const handleCoverLetter = async () => {
     if (coverLetter) return;

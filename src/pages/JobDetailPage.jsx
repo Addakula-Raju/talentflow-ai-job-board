@@ -33,7 +33,7 @@ export default function JobDetailPage() {
       setLoading(false);
     }, 700);
     return () => clearTimeout(t);
-  }, [id]);
+  }, [getJobById, id]);
 
   const handleSave = () => {
     toggleSaveJob(id);
@@ -258,7 +258,7 @@ export default function JobDetailPage() {
                     className="flex items-center justify-center gap-1.5 text-xs text-ink-tertiary hover:text-ink-primary transition-colors"
                   >
                     <ExternalLink style={{ width: 12, height: 12 }} />
-                    Apply on {job.company}'s site
+                    Apply on {job.company}&apos;s site
                   </a>
                 </div>
               </div>
