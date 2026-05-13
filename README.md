@@ -74,7 +74,7 @@ src/
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/talentflow-ai.git
+git clone https: https://github.com/Addakula-Raju/talentflow-ai-job-board.git
 
 cd talentflow-ai
 
