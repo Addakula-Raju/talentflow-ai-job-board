@@ -340,7 +340,7 @@ export const USER_PROFILE = {
   initials: "AC",
   skills: ["React", "TypeScript", "Next.js", "Python", "AWS", "PostgreSQL"],
   experience: "6 years",
-  location: "San Francisco, CA",
+  location: "India, SWE",
   savedJobs: [],
   appliedJobs: ["job-004"],
   matchPreferences: {
